@@ -162,7 +162,15 @@ main{flex:1;padding:18px;min-width:0}
 .btn[disabled]{opacity:.4;cursor:default}
 .note{padding:20px 22px 26px;color:var(--muted)}
 @media(max-width:720px){
-  aside{display:none}
+  .layout{display:block}
+  aside{position:static;width:auto;height:auto;flex:none;display:flex;gap:8px;overflow-x:auto;
+    padding:10px 12px;border-right:0;border-bottom:1px solid var(--line);white-space:nowrap}
+  aside .sec{flex:0 0 auto}
+  aside .sec.pin{margin-bottom:0}
+  aside hr{display:none}
+  main{padding:14px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+  .photo{height:180px}
   .modal .mhead{flex-direction:column}
   .modal .mpic{width:120px;height:150px;flex:0 0 auto}
 }
@@ -187,7 +195,7 @@ const MENTORS = __MENTORS__;
 const MENTOR_CNT = __MENTOR_CNT__;
 const PH_CNT = __PH_CNT__;
 const IMG_BASE = "src/";
-let curSec = "", curQ = "", shown = [];
+let curSec = "__m__", curQ = "", shown = [];
 
 const side = document.getElementById('side');
 const grid = document.getElementById('grid');

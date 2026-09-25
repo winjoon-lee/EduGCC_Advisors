@@ -75,16 +75,9 @@ python scripts/compress_images.py
 python scripts/build_html.py
 ```
 
-> `scripts/build_html.py` 需要本地 `工作簿1.csv`（导师名单）才能生成「★ 导师名单」板块；该文件未上传，已生成的 `index.html` 已内嵌名单。
-
 ---
 
-## 部署到 GitHub Pages（可选，方便同学在线看）
 
-仓库 **Settings → Pages → Source: Deploy from a branch → Branch: `main` / `root`**，
-之后访问 `https://<你的用户名>.github.io/EduGCC_Advisors/` 即可。
-
----
 
 ## 免责声明
 

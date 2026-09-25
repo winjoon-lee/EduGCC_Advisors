@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 本地导师名单（不上传）
+工作簿1.csv
+
+# OS
+.DS_Store
+Thumbs.db
